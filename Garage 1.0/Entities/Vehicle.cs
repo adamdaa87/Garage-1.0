@@ -1,20 +1,20 @@
 ﻿namespace Garage_1._0.Entities
 {
-    public class Vehicle
+    public class Vehicle 
     {
         public int Id { get; set; }
-        public uint RegisterNumber { get; set; }
-        public string Color { get; set; }
+        public string RegisterNumber { get; set; }
+        public Color Color { get; set; }
         public uint NumberOfWheels { get; set; }
 
-        public  Vehicle(int id, uint registerNumber, string color, uint numberOfWheels)
+        public  Vehicle(string registerNumber, Color color, uint numberOfWheels)
         {
-            Id = id;
-            RegisterNumber = registerNumber;
-            Color = color;
-            NumberOfWheels = numberOfWheels;
+                RegisterNumber = registerNumber;
+                Color = color;
+                NumberOfWheels = numberOfWheels;
         }
 
-        public override string ToString() => $"Id: {Id}, RegisterNumber: {RegisterNumber}";
+        public override string ToString() => $"Vehicle: Id: {Id}, RegisterNumber: {RegisterNumber}, Color: {Color}, NumberOfWheels: {NumberOfWheels}"; 
+
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Garage_1._0.Entities
 {
-    public interface IVehicle
+    public class GarageHandler
     {
-
+      
     }
 }
